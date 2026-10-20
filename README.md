@@ -68,4 +68,4 @@ The test suite checks analytic geometry, generated meshes, route results, input 
 
 ## Credits
 
-Project and portfolio: Saatvik Rai. AI assisted code and presentation. Three.js and OrbitControls are distributed under the [Three.js MIT licence](public/vendor/THREE-LICENSE.txt).
+Project and portfolio: Saatvik Rai. Three.js and OrbitControls are distributed under the [Three.js MIT licence](public/vendor/THREE-LICENSE.txt).
