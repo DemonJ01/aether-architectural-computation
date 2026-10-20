@@ -25,3 +25,5 @@ details>summary{list-style:none;padding-right:24px;position:relative}details>sum
 .research-question .eyebrow{display:block;margin-bottom:1.1rem;font-size:.7rem}
 
 .foundation-copy h3{font:500 11px/1.6 var(--mono);letter-spacing:.045em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}.foundation-copy h3:not(:first-child){margin-top:34px}.foundation-copy .lead{font-size:17px;line-height:1.85}
+
+.pareto-note{margin:20px 0 22px;max-width:500px}.pareto-note h4{font:500 9px/1.6 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--ink);margin-bottom:9px}.pareto-note h4::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#c57b49;margin-right:9px;vertical-align:1px}.pareto-note p{font-size:12px;line-height:1.8;color:var(--muted)}

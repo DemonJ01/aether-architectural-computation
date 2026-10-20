@@ -33,7 +33,15 @@ In Aether, I explore this problem through synthetic geometry, explicitly defined
 - **Retain context.** An authored text fixture demonstrates how a requirement can lose its applicability condition when split.
 - **Develop the research.** Proposed AI agents would connect source evidence, versioned project memory, geometric tools and designer review.
 
+### Pareto front
+
+Non-dominated alternatives when maximising gross floor area and minimising the illustrative material-carbon proxy. No alternative on this front is better in both objectives simultaneously.
+
 The current prototype uses authored requirements and deterministic calculations. Persistent AI agents and the research benchmarks are proposed work. The tower is concept geometry; the material proxy and service-zone checks do not establish structural, fire or statutory certification.
+
+## Towards AI Agents That Retain Architectural Design Context
+
+I aim to investigate how persistent project memory, explicit architectural requirements and computational geometry can support the generation, revision and re-evaluation of spatial design alternatives. This research direction extends the questions explored in Aether and remains proposed work.
 
 ## Run locally
 
