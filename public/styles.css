@@ -23,3 +23,5 @@ details>summary{list-style:none;padding-right:24px;position:relative}details>sum
 
 .research-question{max-width:48rem;margin:0 0 clamp(3rem,7vw,6rem);font-size:clamp(1.2rem,2.2vw,1.9rem);line-height:1.45;color:var(--ink,#373b32)}
 .research-question .eyebrow{display:block;margin-bottom:1.1rem;font-size:.7rem}
+
+.foundation-copy h3{font:500 11px/1.6 var(--mono);letter-spacing:.045em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}.foundation-copy h3:not(:first-child){margin-top:34px}.foundation-copy .lead{font-size:17px;line-height:1.85}

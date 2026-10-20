@@ -12,6 +12,18 @@ Aether connects parametric building form with explicit requirements and inspecta
 
 How can explicit geometric rules and building requirements be used to generate, evaluate and revise spatial design alternatives?
 
+## My technical background and contribution
+
+My experience includes designing and implementing retrieval-augmented generation (RAG) pipelines, incorporating document processing, semantic chunking, embeddings and vector retrieval. I have also developed Python backend services and worked with interactive 3D building visualisation. These experiences motivated my interest in connecting information with spatial reasoning.
+
+## The design problem
+
+A construction requirement can lose its meaning when conditions, exceptions or cross-references are separated from it. Retrieving the relevant information alone does not establish which building elements it affects or how a proposed design change should be evaluated.
+
+## The method
+
+In Aether, I explore this problem through synthetic geometry, explicitly defined requirements and computational checks. Each requirement is linked to its applicable geometric target, allowing alternative spatial arrangements to be evaluated and compared. The requirements and their mappings are manually defined; automatic regulatory interpretation is not claimed.
+
 ## Explore the work
 
 - **Generate form.** Adjust storeys, taper and twist. Shared vertices drive the 3D viewport, quantities and OBJ export.
