@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Aether by Saatvik Rai: architectural-computation through generated form, construction information and inspectable spatial decisions.">
+<title>Aether — architectural-computation</title>
+<link rel="stylesheet" href="/styles.css">
+<script type="importmap">{"imports":{"three":"/vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="#work">architectural-computation<span>Saatvik Rai</span></a>
+<nav aria-label="Main navigation"><a href="#work">Work</a><a href="#results">Experiments</a><a href="#research">Research</a></nav>
+<div class="reading-line" aria-hidden="true"><i id="reading-progress"></i></div>
+</header>
+<main id="main">
+<section id="work" class="journey" aria-labelledby="project-title">
+<h1 id="project-title" class="sr-only">Aether. Form as a system.</h1>
+<div class="cinema-stage" id="cinema-stage">
+<div class="model-word" id="model-word" aria-hidden="true">Aether.</div>
+<div id="aether-scene" class="aether-scene" aria-label="Aether parametric tower and service-zone study"><img class="scene-poster" src="/aether-poster.png" width="818" height="849" alt="Aether's orange-edged, twisting tower on a neutral site model"></div>
+<div class="scene-meta"><span id="scene-title">Aether / Generated form</span><span id="scene-counter">01 / 06</span></div>
+<div class="scene-foot"><span id="scene-caption">18 storeys · 64.8 m · 60° total twist</span><span class="interaction-hint">Drag to inspect</span></div>
+</div>
+<div class="chapters">
+<article class="chapter hero-chapter" data-phase="0">
+<div class="hero-top"><span class="eyebrow">Aether / Computational design and construction AI</span></div>
+<div class="hero-note"><h2>Form as<br>a system.</h2><p>One geometric model.<br>Visible rules. Testable choices.</p><a class="scroll-link" href="#geometry">Scroll to explore <span aria-hidden="true">↓</span></a></div>
+<div class="hero-signature">Selected work<br>AI · software · computational design</div>
+</article>
+<article id="geometry" class="chapter copy-right" data-phase="1">
+<div class="chapter-copy"><span class="eyebrow">01 / Generate</span><h2><span id="tower-floor-title">Eighteen floors.</span><br>One set of rules.</h2><p>Each floor scales and rotates with height. The same vertices drive the viewport, quantities and exported model.</p><div class="mini-metrics"><div><strong id="tower-height">64.8 m</strong><span>height</span></div><div><strong id="tower-area">11,611 m²</strong><span>gross floor area</span></div></div>
+<details class="quiet-details"><summary>Change the form</summary><div class="form-controls">
+<label>Total twist <output id="twist-value" for="twist">60°</output><input id="twist" aria-label="Tower total twist" type="range" min="-120" max="120" step="5" value="60"></label>
+<label>Taper <output id="taper-value" for="taper">18%</output><input id="taper" aria-label="Tower taper" type="range" min="0" max="40" step="2" value="18"></label>
+<label>Storeys <output id="floors-value" for="floors">18</output><input id="floors" aria-label="Tower storeys" type="range" min="6" max="32" step="1" value="18"></label>
+</div></details><p class="micro">A concept model. The fixed core is fitted geometrically; structure and circulation require further analysis.</p></div>
+</article>
+<article id="construction" class="chapter copy-left" data-phase="2">
+<div class="chapter-copy"><span class="eyebrow">02 / Interpret</span><h2>A condition.<br>Not just an answer.</h2><p>A construction requirement can lose its meaning when its condition, exception or cross-reference is separated from it. AI agents need to know where the requirement applies before preparing a check.</p><div class="requirement-record"><span>R02 / Authored test requirement</span><p>Service underside ≥ <b>2.40 m</b></p><small>Applies in occupied zones.</small></div><p class="micro">This authored service zone makes the requirement and its spatial consequence visible.</p></div>
+</article>
+<article class="chapter copy-right" data-phase="3">
+<div class="chapter-copy"><span class="eyebrow">03 / Check</span><h2>Clear of the beam.<br>Too low for the room.</h2><p>The direct route meets the beam. Passing below avoids it, but lowers the underside to 2.25 m. The occupied-zone requirement still fails.</p><div class="measure-pair"><div><strong>2.25<span> m</span></strong><small>actual underside</small></div><div><strong>2.40<span> m</span></strong><small>required in this study</small></div></div><div class="equation">2.70 − 0.10 − 0.35 = 2.25 m</div><p class="micro">Beam soffit − separation − service height. The check uses the geometry shown in the model.</p></div>
+</article>
+<article class="chapter copy-left" data-phase="4">
+<div class="chapter-copy"><span class="eyebrow">04 / Revise</span><h2>A smaller turn.<br>A better candidate.</h2><p>The first north bypass passed at 16.80 m. Calculating its position from the beam edge and required clearance produces a 16.20 m route.</p><div class="revision-metric"><span>16.80 m</span><i aria-hidden="true">→</i><strong>16.20 m</strong></div><p>0.60 m shorter, under the same three checks. It is the shortest passing route in this six-candidate set.</p><p class="micro">A finite comparison, rather than a claim of globally optimal routing.</p></div>
+</article>
+<article id="study" class="chapter copy-right live-chapter" data-phase="5">
+<div class="chapter-copy"><span class="eyebrow">05 / Re-evaluate</span><h2>Change one<br>assumption.</h2><p>Raise the beam soffit to 3.05 m. The below-beam route then passes at 11.05 m, with a 2.60 m underside.</p>
+<form id="study-controls" class="study-controls" aria-label="Service-zone experiment">
+<div class="control-head"><span>Live geometric study</span><span id="lab-state" role="status">Study ready</span></div>
+<label class="range-label">Beam soffit <output id="beam-value" for="beam">2.70 m</output><input id="beam" aria-label="Beam soffit" type="range" min="2.45" max="3.2" step="0.05" value="2.7"></label>
+<label class="select-label">Route<select id="route-select" aria-label="Selected service route"></select></label>
+<div class="live-metrics" aria-live="polite"><div><strong id="route-length">16.20 m</strong><span>route length</span></div><div><strong id="route-underside">2.83 m</strong><span>underside</span></div><div><strong id="pass-count">3 / 6</strong><span>candidates pass</span></div></div>
+<p id="route-outcome" class="route-outcome">Meets the three authored checks.</p>
+<details class="quiet-details assumptions"><summary>Assumptions and geometric checks</summary><div>
+<label class="range-label">Minimum headroom <output id="head-value" for="headroom">2.40 m</output><input id="headroom" aria-label="Minimum headroom" type="range" min="2.1" max="2.6" step=".05" value="2.4"></label>
+<label class="range-label">Separation <output id="clear-value" for="clearance">0.10 m</output><input id="clearance" aria-label="Separation allowance" type="range" min=".05" max=".2" step=".05" value=".1"></label>
+<label class="checkbox-label"><input type="checkbox" id="maintenance" checked>Retain the maintenance volume</label>
+<div id="rule-results"></div></div></details>
+<div class="reset-line"><button id="reset-study" type="button" class="text-button">Reset baseline</button></div>
+<p class="error-message" id="lab-error" role="alert" hidden></p>
+</form>
+</div></article>
+</div>
+</section>
+
+<section class="foundation section-pad wrap" id="foundation" aria-labelledby="foundation-title">
+<p class="research-question reveal"><span class="eyebrow">Research question</span>How can explicit geometric rules and building requirements be used to generate, evaluate and revise spatial design alternatives?</p>
+<div class="section-heading reveal"><span class="eyebrow">Project / Construction AI</span><h2 id="foundation-title">AI agents for<br>building information.</h2></div>
+<div class="foundation-grid reveal"><div><p class="lead">At Rai Engineers and Consultants, I prepared construction text for retrieval, worked on backend services, and helped connect the building viewer with AI agents.</p><p>My work included text cleaning, API integration, concurrent-request testing and documentation. The design question is how AI agents can connect a useful explanation to the building element, condition and calculation behind it.</p></div><div class="contribution-list"><div><span>Information</span><p>Document retrieval · backend APIs<br>text preparation</p></div><div><span>Interaction</span><p>Building viewer · AI agents<br>element selection and context</p></div><div><span>Computation</span><p>Parametric tower · controlled alternatives<br>requirement-linked service routes</p></div></div></div>
+<p class="implementation-note">Requirements and element mappings are authored; the geometric checks are inspectable. AI assisted code and presentation.</p>
+</section>
+
+<section id="results" class="results section-pad" aria-labelledby="results-title">
+<div class="wrap"><div class="section-heading reveal"><span class="eyebrow">Experiments / Two linked scales</span><h2 id="results-title">The form is a choice.<br>So is the route.</h2><p class="lead">Generate alternatives, measure them under fixed assumptions, and keep the rejected options in view.</p></div>
+<div class="experiment-grid">
+<article class="experiment-panel reveal"><div class="panel-heading"><span>01 / Parametric form</span><h3>Twelve controlled alternatives.</h3><p>Three floor counts × two tapers × two twists. Base dimensions, floor height and shade depth stay fixed.</p></div><div id="sweep-plot" class="sweep-plot" aria-label="Gross floor area against an illustrative material carbon proxy"></div><p class="chart-caption">Untwisted cases dominate their twisted counterparts under these two objectives. That does not decide spatial quality or architectural value.</p><details class="quiet-details"><summary>Read the twelve cases and proxy assumptions</summary><div id="sweep-table" class="table-scroll"></div><p class="micro">Illustrative factors: concrete 320 kgCO₂e/m³; facade 55 kgCO₂e/m²; shades 18 kgCO₂e/m². This limited proxy excludes foundations, columns, reinforcement, MEP, interiors and lifecycle stages. Shade openness is a geometric ratio, not a solar simulation.</p></details></article>
+<article class="experiment-panel reveal"><div class="panel-heading"><span>02 / Occupied service zone</span><h3>Six arrangements. Three checks.</h3><p>A 12 × 8 × 3.6 m zone tests separation, occupied-zone headroom and maintenance access.</p></div><div id="route-plan" class="route-plan"></div><div id="route-table" class="table-scroll"></div><p class="chart-caption">The table follows the live study. Rectangular envelopes omit fittings, service performance and structural validation.</p></article>
+</div>
+<div class="download-strip reveal"><p>Same geometry. Viewport, quantities and exports.</p><div><label class="sr-only" for="download-format">Download format</label><select id="download-format"><option value="pdf">Portfolio PDF</option><option value="obj">Tower OBJ</option><option value="tower-json">Tower study JSON</option><option value="sweep-csv">Twelve-case CSV</option><option value="route-json">Route study JSON</option><option value="route-csv">Route comparison CSV</option><option value="route-svg">Route plan SVG</option></select><button type="button" id="download" class="download-button">Download <span aria-hidden="true">↓</span></button></div></div>
+<details id="download-preview" class="download-preview" hidden><summary id="download-label">Export ready</summary><pre id="download-content"></pre><a id="download-link" href="#">Save export</a></details>
+</div></section>
+
+<section id="research" class="research section-pad" aria-labelledby="research-title">
+<div class="wrap"><div class="section-heading reveal"><span class="eyebrow">Research / The next experiment</span><h2 id="research-title">AI agents that can<br>resume the work.</h2><p class="lead">Can the agents recover the right conditions, decisions and checks after a new conversation or a model revision?</p></div>
+<div class="project-memory reveal"><div><span class="eyebrow">Persistent project memory / Proposed</span><h3>Save the decision<br>and the context behind it.</h3></div><div><p>A shared project record would retain original clauses, conditions and exceptions, element IDs, model revisions, tool inputs and results. It would separate accepted decisions, proposals and unresolved questions.</p><p>Each agent would retrieve the records relevant to its task. A checkpoint would save completed steps and the next action; a conversation summary would link back to the records rather than replace them.</p></div></div>
+<div class="agent-flow reveal" role="img" aria-label="Proposed AI agent workflow: evidence agent retrieves project records, geometry tools calculate, review agent checks revisions, and designer approves decisions for shared memory"><div><span>01 / Evidence agent</span><strong>Retrieve the clause.<br>Keep its conditions.</strong></div><i aria-hidden="true">→</i><div><span>02 / Geometry tools</span><strong>Run the check.<br>Save inputs and results.</strong></div><i aria-hidden="true">→</i><div><span>03 / Review agent</span><strong>Find changed dependencies.<br>Flag stale decisions.</strong></div><i aria-hidden="true">→</i><div><span>04 / Designer</span><strong>Review the proposal.<br>Approve the memory update.</strong></div></div>
+<p class="handoff-example reveal"><strong>Example handoff</strong> After a beam edit, the agents would recover why a route was chosen, load the current requirement, rerun affected checks and explain the difference. Missing or conflicting records would trigger review.</p>
+<p class="proposal-note reveal">Proposed next stage. Aether currently uses authored rules and deterministic calculations; persistent AI agents are not implemented. Saving records supports recovery, but correct retrieval and interpretation still need testing.</p>
+<div class="research-tests">
+<article class="research-test reveal"><span>01 / Resume</span><div><h3>Recover unfinished work.</h3><p>Interrupt 20 design workflows across five sessions. Compare recent conversation context, rolling summaries and versioned project memory using the same model and task budget.</p></div><div><span class="measure-label">Measure</span><p>Recovered decisions, missed constraints, outdated facts, unsupported answers and recovery time.</p></div></article>
+<article class="research-test reveal"><span>02 / Retain</span><div><h3>Keep the necessary condition.</h3><p>Test 30 reviewed clauses containing conditions, exceptions and cross-references. Compare fixed-word chunks with linked requirement records under the same evidence budget, including missing and conflicting records.</p></div><div><span class="measure-label">Measure</span><p>Lost conditions, wrong element links, unresolved references and appropriate requests for review.</p></div></article>
+<article class="research-test reveal"><span>03 / Update</span><div><h3>Catch a result that has gone stale.</h3><p>Apply 40 controlled document and model edits. Compare name links, element IDs and versioned dependency links against a full recheck and human annotations.</p></div><div><span class="measure-label">Measure</span><p>Missed affected checks, stale passes and unnecessary rechecks. Review disputed cases with architects and engineers.</p></div></article>
+</div>
+<div class="research-end reveal"><p>These are proposed experiments, with planned sample counts rather than completed results. The aim is measurable continuity across sessions and revisions. I want to develop this investigation towards a PhD in architectural computation.</p></div>
+</div></section>
+</main>
+<footer class="site-footer wrap"><div><strong>Saatvik Rai</strong><span>architectural-computation</span></div><p>Aether / Form, construction information and spatial decisions. Concept geometry and authored thresholds; no structural, fire or statutory certification.</p><a href="#work">Back to the model ↑</a></footer>
+<noscript><p class="wrap">JavaScript enables the interactive study. <a href="/Saatvik-Computation-Portfolio.pdf">Read the portfolio PDF</a>.</p></noscript><script type="module" src="/ui.mjs"></script>
+</body></html>

@@ -1,0 +1,63 @@
+{
+  "parameters": {
+    "beamSoffit": 2.7,
+    "headroom": 2.4,
+    "clearance": 0.1,
+    "maintenance": true
+  },
+  "geometry": {
+    "width": 12,
+    "depth": 8,
+    "height": 3.6,
+    "slabBottom": 3.4,
+    "ductWidth": 0.6,
+    "ductHeight": 0.35,
+    "start": [
+      0.7,
+      4,
+      3
+    ],
+    "end": [
+      11.3,
+      4,
+      3
+    ]
+  },
+  "rules": [
+    {
+      "id": "R01",
+      "title": "Geometric separation",
+      "text": "Maintain the selected separation from the beam, slab and zone boundary.",
+      "applies": [
+        "service-route",
+        "beam-01",
+        "slab-01"
+      ],
+      "source": "Authored study brief / R01",
+      "kind": "Authored study assumption"
+    },
+    {
+      "id": "R02",
+      "title": "Occupied-zone headroom",
+      "text": "Keep the service underside above the selected minimum. This condition applies to the occupied zone; plant-only bays require separate review.",
+      "applies": [
+        "service-route",
+        "occupied-zone"
+      ],
+      "source": "Authored study brief / R02",
+      "kind": "Authored study assumption"
+    },
+    {
+      "id": "R03",
+      "title": "Maintenance access",
+      "text": "Keep the declared maintenance volume free of the service and its separation allowance while this requirement is active.",
+      "applies": [
+        "service-route",
+        "access-01"
+      ],
+      "source": "Authored study brief / R03",
+      "kind": "Authored study assumption"
+    }
+  ],
+  "scope": "Finite authored candidate grammar; geometric checks against authored assumptions. No certified design, pressure-loss, fire, structural or compliance analysis."
+}

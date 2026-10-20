@@ -1,0 +1,14 @@
+{
+  "name": "aether-architectural-computation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aether \u2014 an architectural-computation portfolio by Saatvik Rai.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}
