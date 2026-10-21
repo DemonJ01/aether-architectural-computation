@@ -1,8 +1,6 @@
 # Aether
 
-**An architectural-computation portfolio by Saatvik Rai.**
-
-[Open the live engine](https://saatvik-rai-aether.vercel.app) · [Read the portfolio PDF](public/Saatvik-Computation-Portfolio.pdf)
+[Open the live engine](https://saatvik-rai-aether.vercel.app)
 
 Aether connects parametric building form with explicit requirements and inspectable spatial checks. Generate alternatives, compare their consequences, and revise the assumptions in the same geometric model.
 
