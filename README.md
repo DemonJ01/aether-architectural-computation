@@ -1,7 +1,5 @@
 # Aether
 
-[Open the live engine](https://saatvik-rai-aether.vercel.app)
-
 Aether connects parametric building form with explicit requirements and inspectable spatial checks. Generate alternatives, compare their consequences, and revise the assumptions in the same geometric model.
 
 <img src="public/aether-poster.png" alt="Aether's twisting tower with orange floor edges on a neutral site model" width="420">
